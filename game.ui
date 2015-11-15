@@ -1,0 +1,348 @@
+<interface>
+	<object id = "window" class = "GtkWindow">
+	<property name = "visible">True</property>
+	<property name = "title">Blackjack</property>
+	<property name = "border-width">25</property>
+
+		<child>
+		<object id = "grid" class = "GtkGrid">
+		<property name = "visible">True</property>
+	
+			<child>
+			<object id = "grid1" class = "GtkGrid">
+			<property name = "visible">True</property>
+
+				<child>
+				<object id = "dlabel" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">Dealer's Hand	</property>
+				</object>
+				<packing>
+				<property name = "left-attach">0</property>
+				<property name = "top-attach">0</property>
+				</packing>
+				</child>
+
+			</object>
+			<packing>
+			<property name = "left-attach">0</property>
+			<property name = "top-attach">0</property>
+			</packing>	
+			</child>
+
+			<child>
+				<object id = "blank1" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label"> </property>
+				</object>
+				<packing>
+				<property name = "left-attach">0</property>
+				<property name = "top-attach">1</property>
+				</packing>
+			</child>
+
+			<child>
+			<object id = "grid2" class = "GtkGrid">
+			<property name = "visible">True</property>
+
+				<child>
+				<object id = "plabel" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">Player's Hand	</property>
+				</object>
+				<packing>
+				<property name = "left-attach">0</property>
+				<property name = "top-attach">0</property>
+				</packing>
+				</child>
+			</object>
+			<packing>
+			<property name = "left-attach">0</property>
+			<property name = "top-attach">2</property>
+			</packing>
+			</child>
+
+			<child>
+			<object id = "grid3" class = "GtkGrid">
+			<property name = "visible">True</property>
+
+
+				<child>
+				<object id = "rule1" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">						Insurance Pays 1:2			</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">0</property>
+				</packing>
+				</child>
+				
+				<child>
+				<object id = "blank3" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">	</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">1</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "rule2" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">						Blacjack Pays 3:2			</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">2</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "blank7" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">	</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">3</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "rule3" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">						Dealer Stops At 17			</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">4</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "blank8" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">	</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">5</property>
+				</packing>
+				</child>
+
+			</object>
+			<packing>
+			<property name = "left-attach">0</property>
+			<property name = "top-attach">3</property>
+			</packing>
+			</child>
+
+			<child>
+			<object id = "grid4" class = "GtkGrid">
+			<property name = "visible">True</property>
+
+				<child>
+				<object id = "bbanner" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">Bet: Rs. </property>
+				</object>
+				<packing>
+				<property name = "left-attach">0</property>
+				<property name = "top-attach">0</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "bamt" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">0</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">0</property>
+				</packing>
+				 </child>
+
+				<child>
+				<object id = "blank5" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">	</property>
+				</object>
+				<packing>
+				<property name = "left-attach">2</property>
+				<property name = "top-attach">0</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "mbanner" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">Money: Rs. </property>
+				</object>
+				<packing>
+				<property name = "left-attach">3</property>
+				<property name = "top-attach">0</property>
+				</packing>
+				</child>
+
+				
+                                <child>
+                                <object id = "mamt" class = "GtkLabel">
+                                <property name = "visible">True</property>
+                                <property name = "label">50000</property>
+                                </object>
+                                <packing>
+                                <property name = "left-attach">4</property>
+                                <property name = "top-attach">0</property>
+                                </packing>
+                                </child>
+
+				<child>
+				<object id = "b50" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Rs.50</property>
+				</object>
+				<packing>
+				<property name = "left-attach">0</property>
+				<property name = "top-attach">1</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "b100" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Rs.100</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">1</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "b500" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Rs.500</property>
+				</object>
+				<packing>
+				<property name = "left-attach">2</property>
+				<property name = "top-attach">1</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "blank6" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">		</property>
+				</object>
+				<packing>
+				<property name = "left-attach">3</property>
+				<property name = "top-attach">1</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "deal" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Deal</property>
+				</object>
+				<packing>
+				<property name = "left-attach">4</property>
+				<property name = "top-attach">1</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "hit" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Hit</property>
+				</object>
+				<packing>
+				<property name = "left-attach">0</property>
+				<property name = "top-attach">2</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "stand" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Stand</property>
+				</object>
+				<packing>
+				<property name = "left-attach">1</property>
+				<property name = "top-attach">2</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "doubledown" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Double</property>
+				</object>
+				<packing>
+				<property name = "left-attach">2</property>
+				<property name = "top-attach">2</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "split" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Split</property>
+				</object>
+				<packing>
+				<property name = "left-attach">3</property>
+				<property name = "top-attach">2</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "surrender" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Surrender</property>
+				</object>
+				<packing>
+				<property name = "left-attach">4</property>
+				<property name = "top-attach">2</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "tut" class = "GtkButton">
+				<property name = "visible">True</property>
+				<property name = "label">Tutorial Mode</property>
+				</object>
+				<packing>
+				<property name = "left-attach">5</property>
+				<property name = "top-attach">2</property>
+				</packing>
+				</child>
+
+				<child>
+				<object id = "result" class = "GtkLabel">
+				<property name = "visible">True</property>
+				<property name = "label">	</property>
+				</object>
+				<packing>
+				<property name = "left-attach">3</property>
+				<property name = "top-attach">3</property>
+				</packing>
+				</child>
+
+			</object>
+			<packing>
+			<property name = "left-attach">0</property>
+			<property name = "top-attach">4</property>
+			</packing>
+			</child>
+
+		</object>
+		<packing>
+		</packing>
+		</child>
+
+	</object>
+</interface>

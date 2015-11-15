@@ -1,0 +1,14 @@
+									BLACKJACK
+
+Name : Achintya Vidyadhar Pataskar					MIS ID : 111403052
+
+	This is the game of Blackjack a popular card game. I have used the gtk library to create the GUI for the game. The Interface displays cards and buttons and the amount of money the player has or can bet in a single hand. The player uses On Screen Buttons to play the game. I have also added an interactive tutorial in the game. The game uses different functions for calculation and display. And these functions are called in certain order to display the desired result by the callback functions that connect GUI components to these functions.
+	I have used structures for representing cards, shoe, player, dealer and a structure called config that has pointers to all other important structures of the game such as shoe, player, hte game window, various buttons and labels. This structure is the one that is used by all callback functions to pass values to the functions that calculate and display. The data structure card can be used in many other card games alomg with its functions.
+	In general the data structures use each other in the following fashion:
+
+	card -used by- deck -used by- shoe -used by- player and dealer -used by- config
+
+	All functions corresponding to player and dealer actions are separated in files player.c and dealer.c. These include display and calculation functions. These are accessed by callback functions in the file playercb.c and hence configured for use by the On Screen Butons. The main function initialises the player and dealer and shoe. It also calls the configure function to configure the GUI components. The main function uses the game.ui file to build the user interface it also initialises a builder which is a pointer to the GtkBuilder and can be used to access the components of the GUI.
+	The tuorial mode button is used to start the tutorial which displays functions of each button as the tutorial progresses and changes the configuration of the tutorial button to advance in the tutorial and finally turns into the "End Tutorial" Button and can be used to end the tutorial. the tutorial is interactive and the player can use the other buttons to interact and get a hands-on experience while the tutorial is running, thus making the tutorial very interactive. The structure config has a pointer to the tutorial button also and hence it is used to change the configuration of tutorial button easily.
+	Lastly, I have included only one function to calculate and display the bet and added callback functions to call this function it is hence, easy to change, add or remove the callbacks subsequently resulting in changes to the Buttons.
+	This is my mini-project for the year 2015, I have tried to create a good interface and an interactive tutorial for the game of Blackjack alongwith data structures such as card that can be used in other games as well.
